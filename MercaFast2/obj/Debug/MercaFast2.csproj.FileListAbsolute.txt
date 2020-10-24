@@ -1,0 +1,7 @@
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\bin\MercaFast2.dll.config
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\bin\MercaFast2.dll
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\bin\MercaFast2.pdb
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\obj\Debug\MercaFast2.csprojAssemblyReference.cache
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\obj\Debug\MercaFast2.csproj.CoreCompileInputs.cache
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\obj\Debug\MercaFast2.dll
+C:\Users\juan esteban nichoy\Desktop\UNIVERSIDAD\8 SEMESTRE\PROGRAMACIÓN EN AMBIENTE WEB\PROYECTO FINAL\VISUAL2\MercaFast2\MercaFast2\obj\Debug\MercaFast2.pdb

@@ -1,0 +1,168 @@
+﻿c<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="MercaFast.MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .logos {
+            height: 30px;
+            /*margin-left:1140px;*/
+        }
+
+        .logos2 {
+            height: 30px;
+            margin-left: 10px;
+        }
+        /*.bg {
+            background-image: url("/MasterPage/3.png");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+    </style>
+    <%--<link href="estilo.css" type="text/css" rel="stylesheet">--%>
+</head>
+<body>
+        <form id="form1" runat="server">
+
+        <header>
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color:#21618C">
+                <div class="container">
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/MasterPage/Logo.png" Height="70px" PostBackUrl="~/Pagina/Inicio.aspx" />
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pagina/Inicio.aspx">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pagina/QuienesSomos.aspx">Quienes somos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Carrito/Productos.aspx">Productos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Iconos/user2.png" class="card-img-top" Style="width: 25px;" OnClick="ImageButton2_Click" />
+                            </li>
+
+                            <li class="nav-item">
+                                <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Iconos/CarritoBlanco.png" class="card-img-top" Style="width: 40px;" OnClick="ImageButton2_Click" PostBackUrl="~/Carrito/Carrito.aspx" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </section>
+
+    </form>
+
+    <footer class="footer">
+        <div class="container-fluid" style="background-color:#21618C">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto">
+
+                        <!-- Content -->
+                        <h1 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white">MercaFast Colombia</h1>
+                        <h4 style="color: white;">Un paso más cerca de ti</h4>
+
+                        <p style="color: white;">
+                            La maestría de los agricultores Colombianos son elemento 
+                            esencial del procesor a la hora de seleccionar nuestros 
+                            productos para que dispongas y disfrutes de ellos.
+                            sentirás pasión y compromiso Colombiano
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">Enlaces de interes</h5>
+
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="../Pagina/QuienesSomos.aspx" style="color: white;">Historia de MercaFast</a>
+                            </li>
+                            <li>
+                                <a href="../Carrito/Productos.aspx" style="color: white;">Productos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">Ayuda</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="../Pagina/QuienesSomos.aspx" style="color: white;">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="../Pagina/QuienesSomos.aspx" style="color: white;">Encuentra nuestras tiendas</a>
+                            </li>
+                            <li>
+                                <a href="../Modulos/Login.aspx" style="color: white;">Iniciar sesión</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py© 2019 Copyright: Universidad Autónoma de Occidente Cali"> 
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

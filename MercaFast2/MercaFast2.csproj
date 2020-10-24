@@ -1,0 +1,314 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4653779A-BDBE-4951-8945-703CC63104A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MercaFast2</RootNamespace>
+    <AssemblyName>MercaFast2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Carrito\Carrito.aspx" />
+    <Content Include="Carrito\FacturaPagada.aspx" />
+    <Content Include="Carrito\Productos.aspx" />
+    <Content Include="Carrito\productoSeleccionado.aspx" />
+    <Content Include="CRUD\crearProducto.aspx" />
+    <Content Include="CRUD\CRUDClientes.aspx" />
+    <Content Include="CSS\EstilosHome.css" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="Iconos\Cliente.png" />
+    <Content Include="Iconos\user.png" />
+    <Content Include="Iconos\user2.png" />
+    <Content Include="Imagenes\Aseo.png" />
+    <Content Include="Imagenes\aseo1.png" />
+    <Content Include="Imagenes\Cliente.jpg" />
+    <Content Include="Imagenes\comida1.png" />
+    <Content Include="Imagenes\FacturaFInal.jpg" />
+    <Content Include="Imagenes\foto1.png" />
+    <Content Include="Imagenes\foto2.png" />
+    <Content Include="Imagenes\foto3.png" />
+    <Content Include="Imagenes\Hatsu.jpg" />
+    <Content Include="Imagenes\header.jpg" />
+    <Content Include="Imagenes\header1.jpg" />
+    <Content Include="Imagenes\Img Qs.png" />
+    <Content Include="Imagenes\ImgLog.gif" />
+    <Content Include="Imagenes\img_avatar1.png" />
+    <Content Include="Imagenes\limpieza1.png" />
+    <Content Include="Imagenes\Logo.png" />
+    <Content Include="Imagenes\ofertasemanal.png" />
+    <Content Include="Imagenes\Puntos2.png" />
+    <Content Include="Imagenes\Secuencia 01.mp4" />
+    <Content Include="Imagenes\ShampooJhonsson.jpg" />
+    <Content Include="Imagenes\Skewed.png" />
+    <Content Include="Imagenes\Stand.jpg" />
+    <Content Include="Imagenes\SupeClient2.jpg" />
+    <Content Include="Imagenes\Super3.png" />
+    <Content Include="Imagenes\Supermarket2.jpg" />
+    <Content Include="Imagenes\supermercado.png" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="MasterPage\1.png" />
+    <Content Include="MasterPage\2.png" />
+    <Content Include="MasterPage\3.png" />
+    <Content Include="MasterPage\estilo.css" />
+    <Content Include="MasterPage\MasterPage.Master" />
+    <Content Include="MasterPage\css\bootstrap-grid.css.map" />
+    <Content Include="MasterPage\css\bootstrap-grid.min.css.map" />
+    <Content Include="MasterPage\css\bootstrap-reboot.css.map" />
+    <Content Include="MasterPage\css\bootstrap-reboot.min.css.map" />
+    <Content Include="MasterPage\css\bootstrap.css.map" />
+    <Content Include="MasterPage\css\bootstrap.min.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\AdjuntarArchivo.png" />
+    <Content Include="Iconos\Carrito2.png" />
+    <Content Include="Iconos\CarritoBlanco.png" />
+    <Content Include="Iconos\Crédito.png" />
+    <Content Include="Iconos\Efectivo.png" />
+    <Content Include="Iconos\Lupa.png" />
+    <Content Include="Iconos\MasterCard.png" />
+    <Content Include="Iconos\PSE.png" />
+    <Content Include="Iconos\UserCirculo.png" />
+    <Content Include="Iconos\UserSinBorde %281%29.png" />
+    <Content Include="Iconos\Visa.png" />
+    <Content Include="Imagenes\1.jpeg" />
+    <Content Include="Imagenes\1.png" />
+    <Content Include="Imagenes\2.jpeg" />
+    <Content Include="Imagenes\2.png" />
+    <Content Include="Imagenes\3.jpeg" />
+    <Content Include="Imagenes\3.png" />
+    <Content Include="Imagenes\4.jpeg" />
+    <Content Include="Imagenes\4.png" />
+    <Content Include="Imagenes\5.jpeg" />
+    <Content Include="Imagenes\5.png" />
+    <Content Include="Imagenes\6.jpeg" />
+    <Content Include="Imagenes\6.png" />
+    <Content Include="Imagenes\carrito 2.jpg" />
+    <Content Include="Imagenes\iniciosesion.png" />
+    <Content Include="MasterPage\css\bootstrap-grid.css" />
+    <Content Include="MasterPage\css\bootstrap-grid.min.css" />
+    <Content Include="MasterPage\css\bootstrap-reboot.css" />
+    <Content Include="MasterPage\css\bootstrap-reboot.min.css" />
+    <Content Include="MasterPage\css\bootstrap.css" />
+    <Content Include="MasterPage\css\bootstrap.min.css" />
+    <Content Include="MasterPage\Logo.png" />
+    <Content Include="Modulos\CuentaAdmin.aspx" />
+    <Content Include="Modulos\CuentaCliente.aspx" />
+    <Content Include="Modulos\Diseno\animate.css" />
+    <Content Include="Modulos\Diseno\animsition.min.css" />
+    <Content Include="Modulos\Diseno\animsition.min.js" />
+    <Content Include="Modulos\Diseno\bootstrap.min.css" />
+    <Content Include="Modulos\Diseno\bootstrap.min.js" />
+    <Content Include="Modulos\Diseno\countdowntime.js" />
+    <Content Include="Modulos\Diseno\daterangepicker.js" />
+    <Content Include="Modulos\Diseno\favicon.ico" />
+    <Content Include="Modulos\Diseno\font-awesome.min.css" />
+    <Content Include="Modulos\Diseno\hamburgers.min.css" />
+    <Content Include="Modulos\Diseno\jquery-3.2.1.min.js" />
+    <Content Include="Modulos\Diseno\main.css" />
+    <Content Include="Modulos\Diseno\main.js" />
+    <Content Include="Modulos\Diseno\material-design-iconic-font.min.css" />
+    <Content Include="Modulos\Diseno\moment.min.js" />
+    <Content Include="Modulos\Diseno\popper.js" />
+    <Content Include="Modulos\Diseno\select2.min.css" />
+    <Content Include="Modulos\Diseno\select2.min.js" />
+    <Content Include="Modulos\Diseno\util.css" />
+    <Content Include="Modulos\estilos.css" />
+    <Content Include="Modulos\FacturaCliente.aspx" />
+    <Content Include="Modulos\Login.aspx" />
+    <Content Include="Modulos\popup.js" />
+    <Content Include="Modulos\Registro.aspx" />
+    <Content Include="Pagina\Inicio.aspx" />
+    <Content Include="Pagina\QuienesSomos.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carrito\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito\FacturaPagada.aspx.cs">
+      <DependentUpon>FacturaPagada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito\FacturaPagada.aspx.designer.cs">
+      <DependentUpon>FacturaPagada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito\productoSeleccionado.aspx.cs">
+      <DependentUpon>productoSeleccionado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito\productoSeleccionado.aspx.designer.cs">
+      <DependentUpon>productoSeleccionado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\crearProducto.aspx.cs">
+      <DependentUpon>crearProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRUD\crearProducto.aspx.designer.cs">
+      <DependentUpon>crearProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDClientes.aspx.cs">
+      <DependentUpon>CRUDClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDClientes.aspx.designer.cs">
+      <DependentUpon>CRUDClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\CuentaAdmin.aspx.cs">
+      <DependentUpon>CuentaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\CuentaAdmin.aspx.designer.cs">
+      <DependentUpon>CuentaAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\CuentaCliente.aspx.cs">
+      <DependentUpon>CuentaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\CuentaCliente.aspx.designer.cs">
+      <DependentUpon>CuentaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\FacturaCliente.aspx.cs">
+      <DependentUpon>FacturaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\FacturaCliente.aspx.designer.cs">
+      <DependentUpon>FacturaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina\QuienesSomos.aspx.cs">
+      <DependentUpon>QuienesSomos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina\QuienesSomos.aspx.designer.cs">
+      <DependentUpon>QuienesSomos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58568</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
